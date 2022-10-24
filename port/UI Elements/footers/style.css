@@ -1,0 +1,239 @@
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background: #333;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  margin: 3em 0;
+  font-size: 3em;
+}
+
+/*Footer styles start here*/
+footer * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer {
+  color: #fff;
+  background: #121315;
+}
+
+footer p {
+  color: #ccc; 
+  max-width: 25em;
+  font-size: 0.9em;
+  line-height: 23px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer h4 {
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.footer1 {
+  position: relative;
+  /*BG image in description*/
+  background: url(https://source.unsplash.com/VviFtDJakYk/1600x900) no-repeat center;
+  background-size: cover;
+}
+
+.footer1::before {
+  content: '';
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.footer1 .container {
+  position: relative;
+}
+
+.footer1 .footer-top .container,
+.footer1 .col2,
+.footer1 .footer-bottom .container,
+.footer2 .container,
+.footer3 .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.footer1 .footer-bottom .container {
+  padding: 1em 2em;
+  align-items: center;
+}
+
+.footer1 .menu li {
+  margin-bottom: 0.6em;
+}
+
+.footer1 .menu a:hover {
+  text-decoration: underline;
+}
+
+.brand {
+  display: block;
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+.media-icons li,
+.service-icons li {
+  display: inline-block;
+  margin: 0.5em 0.5em 0.5em 0;
+}
+
+.media-icons a {
+  font-size: 1.1em;
+  width: 2em;
+  height: 2em;
+  border: 1px #fff solid;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.media-icons a:hover {
+  background: #fff;
+  color: #111;
+}
+
+.service-icons a {
+  font-size: 1.6em;
+}
+
+.service-icons a:hover {
+  color: #dbdbdb;
+}
+
+.footer-bottom {
+  border-top: 1px #dbdbdb solid;
+}
+
+.footer2 .menu {
+  margin-bottom: 3em;
+}
+
+.footer2 .menu li,
+.footer4 .menu li {
+  display: inline-block;
+  margin: 0.7em 0.7em 0.7em 0;
+  text-align: center; 
+}
+
+.footer2 .menu a,
+.footer4 .menu a  {
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.footer2 .menu a:hover,
+.footer4 .menu a:hover {
+  color: #ff2b00;
+}
+
+.input-wrap {
+  margin: 1em 0;
+  display: flex;
+}
+
+.input-wrap input {
+  padding: 0.5em;
+  border: none;
+  background: #20232a;
+  color: #ccc;
+}
+
+.input-wrap input:focus {
+  outline: none;
+}
+
+.input-wrap button {
+  padding: 0.8em;
+  background: #ff2b00;
+  border: none;
+  color: #fff;
+}
+
+.input-wrap button:hover {
+  background: #fff;
+  color: #111;
+}
+
+.footer3 .container {
+  align-items: center;
+  text-align: center;
+}
+
+.footer3 .brand {
+  margin: 0;
+}
+
+.footer3 .menu li {
+  display: inline-block;
+  margin: 1em;
+  text-align: center;
+}
+
+.footer3 .menu a  {
+  transition: 0.3s;
+  font-weight: 300;
+  color: #ccc;
+}
+
+.footer3 .menu a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer4 {
+  text-align: center;
+}
+
+.footer4 p {
+  margin: 0 auto;
+}
+
+.footer4 .media-icons {
+  margin: 1.5em 0;
+}
+
+@media screen and (max-width: 900px) {
+  .footer1 .footer-top .container,
+  .footer1 .footer-bottom .container,
+  .footer2 .container,
+  .footer3 .container  {
+    flex-direction: column;
+  }
+  .footer1 .col2  {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,38 @@
+
+html, body{
+    height: 100%;
+    width: 100%;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  nav{
+   margin: auto;
+    list-style: none;
+    text-align: center;
+    position: center;
+    display: block;
+  }
+   h1{
+     position: center;
+   }
+  
+  .im {
+    display: center;
+    width: 20%;
+    height: 35%;
+    position: center;
+    margin-left: 10%; 
+    margin-right: 10%; 
+    margin-top: 1%;
+  }
+  .imw {
+    display: center;
+    width: 20%;
+    height: 35%;
+    position: center;
+    margin-left: 10%; 
+    margin-right: 10%; 
+    margin-top: 1%;
+  }

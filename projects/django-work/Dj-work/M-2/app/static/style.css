@@ -1,0 +1,66 @@
+html{
+    background-image: linear-gradient(to right,#31a7cb, #50bfda,#7cd0ed,#7cd0ed,#50bfda,#31a7cb);
+}
+
+
+.list_of_teams{
+    text-align: center;
+    
+}
+
+.points {
+    list-style: none;
+    display: flex;
+    padding: 30px 0;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-size: 20px;
+    margin-bottom: 100px;
+    font-size: 20px;
+    
+} 
+.points a{
+    text-decoration: none;
+    color: black;
+}
+
+.points a:hover{
+    text-decoration: underline;
+
+}
+
+.button-text{
+    align-items: center;
+}
+
+
+.test{
+    display: block;
+    text-align: center;
+
+
+}
+h1{
+    font-size: 3em;
+}
+h2{
+    font-size: 2em;
+}
+
+body{
+    text-align: center;
+}
+
+.about{
+    padding: 100px;
+}
+.about2{
+    padding: 10px;
+}
+
+.list{
+    list-style: none;
+    font-size: 2em;
+}

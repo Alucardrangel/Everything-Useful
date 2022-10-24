@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background: #101214;
+}
+
+.title {
+  text-align: center;
+  color: #fff;
+}
+
+.progress-bars {
+  list-style-type: none;
+  padding: 1.5em;
+  color: #fff;
+  background: #111;
+  border-radius: 15px;
+  width: 700px;
+  box-shadow: 0 0 15px #050505;
+  margin: 2em auto;
+}
+
+.progress-bars h3 {
+  color: #a6a6a6;
+  font-weight: 400;
+  margin: 0.5em 0;
+}
+
+.progress-bars li {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bar {
+  width: 85%;
+  height: 0.5em;
+  background: #111;
+  box-shadow: 
+    inset -1px -1px #5c5c5c,
+    inset 1px 4px 8px #050505;
+  border-radius: 10px;
+  margin: 2em 0;
+}
+
+.progress {
+  background: linear-gradient(
+    90deg,
+    #305e9c,
+    #70adff
+  );
+  width: 0%; /*Change to '0' when the CSS is done*/
+  height: 100%;
+  border-radius: inherit;
+  position: relative;
+  box-shadow: 0 0 3px #70adff;
+}
+
+.progress::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%; 
+  transform: translateY(-50%);
+  width: 1em;
+  height: 100%;
+  background: #fff;
+  border-radius: inherit;
+  box-shadow: 0 0 20px #fff;
+  filter: blur(2px);
+}
+
+.percentage {
+  font-weight: 700;
+  color: #f1f1f1;
+  text-shadow: 0 0 5px #305e9c;
+}
+
+@media screen and (max-width: 800px) {
+  .progress-bars {
+    width: 80%;
+  }
+}

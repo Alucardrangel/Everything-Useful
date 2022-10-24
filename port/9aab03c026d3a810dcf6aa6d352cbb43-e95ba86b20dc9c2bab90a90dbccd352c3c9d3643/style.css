@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
+
+body {
+  background: radial-gradient(#322839, #1a1820);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+h1 {
+  background-image: url(https://media.giphy.com/media/7VzgMsB6FLCilwS30v/giphy-downsized-large.gif?cid=ecf05e47xhqug20x7wdh5cxsm17j4jm3l9hc2hxzm2jp1xcu&rid=giphy-downsized-large.gif&ct=g%20--output%20~/Desktop/download.gif);
+  background-size: 300px 300px;
+  color: transparent;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  font-size: 17em;
+  margin: 10px 0;
+  letter-spacing: 5px;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  font-weight: 900;
+}

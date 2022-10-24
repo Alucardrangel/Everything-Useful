@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <title>Progress Circles</title>
+</head>
+<body>
+
+  <h1 class="title">Scroll To Activate</h1>
+
+  <div class="space" style="height: 100vh;"></div>
+  
+  <section class="circles">
+    <div class="circle" data-prog="95">
+      <svg width="250" height="250">
+        <circle r="100" cx="125" cy="125" class="track"></circle>
+        <circle r="100" cx="125" cy="125" class="progress"></circle>
+      </svg>
+      <div class="circle-inner">
+        <h1>95%</h1>
+      </div>
+    </div>
+    <div class="circle" data-prog="70">
+      <svg width="250" height="250">
+        <circle r="100" cx="125" cy="125" class="track"></circle>
+        <circle r="100" cx="125" cy="125" class="progress"></circle>
+      </svg>
+      <div class="circle-inner">
+        <h1>70%</h1>
+      </div>
+    </div>
+    <div class="circle" data-prog="43">
+      <svg width="250" height="250">
+        <circle r="100" cx="125" cy="125" class="track"></circle>
+        <circle r="100" cx="125" cy="125" class="progress"></circle>
+      </svg>
+      <div class="circle-inner">
+        <h1>43%</h1>
+      </div>
+    </div>
+    <div class="circle" data-prog="67">
+      <svg width="250" height="250">
+        <circle r="100" cx="125" cy="125" class="track"></circle>
+        <circle r="100" cx="125" cy="125" class="progress"></circle>
+      </svg>
+      <div class="circle-inner">
+        <h1>67%</h1>
+      </div>
+    </div>
+  </section>
+  
+  <div class="space" style="height: 20em;"></div>
+  
+  <script src="main.js"></script>
+</body>
+</html>

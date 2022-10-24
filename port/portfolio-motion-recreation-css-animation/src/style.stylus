@@ -1,0 +1,137 @@
+//https://d13yacurqjgara.cloudfront.net/users/343652/screenshots/2302197/open-uri20151020-3-zn9akg
+
+random(min,max)
+  return floor(math(0, 'random')*(max - min + 1) + min)
+
+body
+  margin 0
+  background #000
+
+.card
+  width 70vw
+  height 80vh
+  margin 10vh 15vw
+  background rgba(white, .05)
+  color white
+  border-radius 2px
+  padding 18vh 10vw
+  box-sizing border-box
+  position relative
+  animation card .8s ease-out
+  animation-fill-mode forwards
+  .content
+    font-family 'Open Sans', sans-serif
+    letter-spacing 2px
+    h1
+      display inline-block
+      padding 8px 16px
+      margin 4px 0
+      width auto
+      font-family 'PT Serif', serif
+      transform scale(1, .9)
+    p
+      margin 4px 0
+      padding 4px 16px
+      display inline-block
+    p, h4, h5, h6
+      font-weight 100
+    a
+      font-weight 700
+      text-decoration none
+      box-shadow 0 -3px rgba(white, .3) inset
+    .column
+      display inline-block
+      width 20vw
+      margin-top 16px
+      font-size .8em
+      *
+        margin 3px 0
+        display inline-block
+    .tabs
+      position absolute
+      bottom 2.5vh
+      right 2.5vw
+      font-size .6em
+      .tab
+        margin 0 8px
+        padding 0
+        float right
+        font-weight 100
+    .light
+      color white
+    .medium
+      color rgba(white, .85)
+    .dark
+      color rgba(white, .5)
+    //&, & *
+      //box-shadow inset 0 0 0 2px red
+    *
+      padding-left 0 !important
+    p, h1, h2, h3, h4, h5, h6, div
+      *
+        animation fadein 3s
+      &.light
+        animation boxshadow-light 3s
+      &.medium
+        animation boxshadow-medium 3s
+      &.dark
+        animation boxshadow-dark 3s
+      for n in (1..100)
+        &:nth-child({n})
+          animation-duration (3.5 + (n / 3s))
+          *
+            animation-duration @animation-duration
+
+@keyframes card
+  0%, 50%
+    box-shadow -70vw 0 0 2vw rgba(white, .05) inset, -140vw 0 0 2vw rgba(white, .05) inset
+  100%
+    box-shadow 0 0 0 2vw rgba(white, .05) inset, calc(-66vw + 1px) 0 0 2vw rgba(white, .05) inset
+
+@keyframes boxshadow-light
+  0%, 40%
+    color rgba(0,0,0,0)
+    box-shadow 0 0 white inset
+  79.9999999999999%
+    box-shadow 50vw 0 white inset
+    color rgba(0,0,0,0)
+  80%
+    box-shadow -50vw 0 white inset
+    color rgba(0,0,0,0)
+  100%
+    color white
+    box-shadow 0 0 white inset
+
+@keyframes boxshadow-medium
+  0%, 40%
+    color rgba(0,0,0,0)
+    box-shadow 0 0 rgba(white, .85) inset
+  79.9999999999999%
+    box-shadow 50vw 0 rgba(white, .85) inset
+    color rgba(0,0,0,0)
+  80%
+    box-shadow -50vw 0 rgba(white, .85) inset
+    color rgba(0,0,0,0)
+  100%
+    color rgba(white, .85)
+    box-shadow 0 0 rgba(white, .85) inset
+
+@keyframes boxshadow-dark
+  0%, 40%
+    color rgba(0,0,0,0)
+    box-shadow 0 0 rgba(white, .5) inset
+  79.9999999999999%
+    box-shadow 50vw 0 rgba(white, .5) inset
+    color rgba(0,0,0,0)
+  80%
+    box-shadow -50vw 0 rgba(white, .5) inset
+    color rgba(0,0,0,0)
+  100%
+    color rgba(white, .5)
+    box-shadow 0 0 rgba(white, .5) inset
+
+@keyframes fadein
+  0%, 80%
+    opacity 0
+  100%
+    opacity 1

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>UI Kit</title>
+</head>
+<body>
+  
+  <section class="neumorphism-kit">
+    <div>
+      <div class="card neu">
+        <div class="profile-img">
+          <img src="https://i.ibb.co/k5cnFCW/user.jpg" alt="user"/>
+        </div>
+        <h2>Robo Chan</h2>
+        <small>Customer Service</small>
+        <button class="btn card-btn btn-round">Message</button>
+      </div>
+      <div class="range-slider">
+        <input type="range" min="0" max="100" value="50" class="slider neu-inset"/>
+        <div class="slider-thumb"></div>
+        <div class="progress"></div>
+      </div>
+      <div class="player-buttons">
+        <button class="btn">
+          <span class="material-symbols-outlined">
+            chevron_left
+          </span>
+        </button>
+        <button class="btn">
+          <span class="material-symbols-outlined">
+            pause
+          </span>
+        </button>
+        <button class="btn">
+          <span class="material-symbols-outlined">
+            chevron_right
+          </span>
+        </button>
+      </div>
+      <div class="dropdown">
+        <div class="select neu">
+          <span class="selected">Figma</span>
+          <div class="caret"></div>
+        </div>
+        <ul class="menu neu">
+          <li>Framer</li>
+          <li>Sketch</li>
+          <li>Invision Studio</li>
+          <li class="active">Figma</li>
+          <li>Adobe XD</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <ul class="bars">
+        <li data-height="5" class="neu-inset">
+          <span data-fill="75"></span>
+        </li>
+        <li data-height="10" class="neu-inset">
+          <span data-fill="36"></span>
+        </li>
+        <li data-height="7" class="neu-inset">
+          <span data-fill="83"></span>
+        </li>
+        <li data-height="12" class="neu-inset">
+          <span data-fill="89"></span>
+        </li>
+        <li data-height="6" class="neu-inset">
+          <span data-fill="43"></span>
+        </li>
+        <li data-height="9" class="neu-inset">
+          <span data-fill="70"></span>
+        </li>
+        <li data-height="7" class="neu-inset">
+          <span data-fill="50"></span>
+        </li>
+      </ul>
+      <div class="buttons">
+        <button class="btn btn-circle">
+          <span class="material-symbols-outlined">
+            add
+          </span>
+        </button>
+        <button class="btn btn-circle">
+          <span class="material-symbols-outlined">
+            remove
+          </span>
+        </button>
+        <button class="btn btn-circle">
+          <span class="material-symbols-outlined">
+            close
+          </span>
+        </button>
+        <input type="checkbox" checked="checked" class="check"/>
+        <button class="btn btn-circle">
+          <span class="material-symbols-outlined">
+            thumb_up
+          </span>
+        </button>
+        <button class="btn btn-circle">
+          <span class="material-symbols-outlined">
+            star
+          </span>
+        </button>
+        <button class="btn btn-circle">
+          <span class="material-symbols-outlined">
+            favorite
+          </span>
+        </button>
+        <input type="checkbox" class="check"/>
+      </div>
+      <div class="input-wrap neu-inset">
+        <input type="search" class="search" placeholder="Search..."/>
+        <span class="material-symbols-outlined">
+          search
+        </span>
+      </div>
+      <div class="toggles">
+        <input type="checkbox" checked="checked" class="toggle"/>
+        <input type="checkbox" checked="checked" class="toggle toggle-round"/>
+        <input type="radio" checked="checked" name="radio" class="radio"/>
+        <input type="checkbox" class="toggle"/>
+        <input type="checkbox" class="toggle toggle-round"/>
+        <input type="radio" name="radio" class="radio"/>
+      </div>
+    </div>
+    <div>
+      <div class="buttons-toggles">
+        <input type="checkbox" checked="checked" class="toggle-lg"/>
+        <button class="btn">
+          <span class="material-symbols-outlined">
+            share
+          </span>
+          Share
+        </button>
+        <input type="checkbox" class="toggle-lg"/>
+        <button class="btn">
+          <span class="material-symbols-outlined">
+            bookmarks
+          </span>
+          Label
+        </button>
+      </div>
+      <div class="circle" data-prog="75">
+        <svg width="250" height="250">
+          <circle r="100" cx="125" cy="125" class="track"></circle>
+          <circle r="100" cx="125" cy="125" class="circle-progress"></circle>
+        </svg>
+        <div class="circle-inner">
+          <h1>75%</h1>
+        </div>
+      </div>
+      <div class="btn-groups">
+        <div class="btn-group neu">
+          <button>Closed</button>
+          <button class="active">Open</button>
+        </div>
+      </div>
+      <div class="btn-groups">
+        <div class="btn-group neu">
+          <button class="active">Closed</button>
+          <button>Open</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <script src="main.js"></script>
+</body>
+</html>

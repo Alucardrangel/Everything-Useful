@@ -1,0 +1,164 @@
+.container, .container-fluid{
+  padding:0; 
+  width:100%;
+text-align: center;
+  font-size: 17px;
+}
+
+hr{
+  background-color: white;
+  width: 40%;
+  height:3px;
+  border: none;
+}
+
+/* Navigation Bar */
+.navbar-inverse{
+  border: none;
+  border-shadow:4;
+  background-color: black;
+  font-color: white;
+  padding-right:11px;
+  padding-left:10px;
+}
+
+.navbar ul li a {
+  color: white !important;
+  font-size: 14px;
+}
+
+.navbar ul li a:hover{
+  background-color: black  !important;
+  color: #990000 !important;
+}
+
+.navbar-head {
+  color: red !important;
+  background-color: black;
+}
+
+.navbar-brand {
+  color: White !important;
+  background-color: #990000;;   
+}
+
+.navbar-inverse .navbar-brand:hover{
+  color: White !important;
+  background-color:#990000;; 
+}
+.active{
+  background-color: #990000;
+ color:white;
+}
+
+/* Header */
+.header{
+  padding-top: 0px;
+}
+.bg{
+  background-image: url('https://res.cloudinary.com/atharris2015/image/upload/c_scale,e_grayscale,w_1000/v1464453128/photo-1429051781835-9f2c0a9df6e4_blqegv.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: px;
+  padding: 50px;
+  height: 600px;
+  
+  }
+
+.thin-white-border{
+  border-width:10px;
+  border-color: black;
+  border-style: solid;
+}
+h1{
+  padding-top:200px;
+  font-size: 10.0vmin;
+  color: #990000;
+}
+  .hr1{
+  background-color: white;
+  width: 75%;
+  height:5px;
+  border: none;
+} 
+@media only screen and (max-width:480px){
+  h1{ font-size: 1vmin
+  position: fixed;
+  }
+}
+
+/* Body */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ccc;
+  font-family: 'Roboto Slab', serif;
+}
+/* About Me */
+.about{
+  background-color: black;
+  color:white;
+  padding: 50px;
+  margin-top:0; 
+  
+}
+/* Skills */
+.skills{
+  background-color: #990000;
+  padding: 50px;
+  color:white;
+}
+
+.devicons {
+  font-size: 60px;
+}
+/* Portfolio */
+.portfolio{
+  background-color:black;
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+.thumbnail {
+ width: 350px;
+ height:200px; 
+  margin: auto auto;
+}
+
+.space {
+  margin-top: 40px;
+  text-align: center;
+  overflo: hidden;
+}
+/*Contact*/
+.links{
+  padding: 10px;
+  padding-right: 10px;
+  color:white;
+}
+
+.links:hover{
+  color: black;
+  text-decoration:none;
+  
+}
+.contact{
+  background-color: #990000;
+  padding: 50px;
+  color: white;
+
+}
+.btn{
+  background: black;
+  color: white; 
+}
+
+
+/*Footer*/
+.footer{
+  background-color: black;
+  color: white;
+  padding:10px 0 5px 10px;
+  text-align: left;
+  font-size:14px;
+}

@@ -1,0 +1,141 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Helvetica', sans-serif;
+  margin: 0;
+}
+
+.switch {
+  position: relative;
+  width: 2em;
+  height: 7em;
+}
+
+.background {
+  background: radial-gradient(
+   #1f1f1f, #080808
+  );
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+}
+
+.switch-base {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2em;
+  height: 100%;
+  border-radius: 3em;
+  border: 2px #090909 solid;
+  color: #a6a6a6;
+  background: linear-gradient(
+    -185deg, #131313, #444245
+  );
+  box-shadow: inset -2px -2px 0px #5e5e5e,
+    inset 2px 2px 0px #1c1c1c;
+}
+
+.switch-base::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: inherit;
+  background: linear-gradient(
+    145deg, #262626, #606060
+  );
+  width: 2.25em;
+  height: 7.25em;
+  z-index: -1;
+  box-shadow: 11px 11px 22px #141414,
+             -11px -11px 22px #525252;
+}
+
+.check {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 3;
+}
+
+.thumb {
+  position: absolute;
+  left: 3px;
+  bottom: 0em;
+  width: 1.2em;
+  height: 1.2em;
+  border: 5px #fff solid;
+  border-radius: 50%;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.text {
+  position: absolute;
+  right: -2.5em;
+  top: 50%;
+  transform: translateY(-50%);
+  letter-spacing: 4px;
+  font-size: 1.5em;
+  height: 5.1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #fff;
+  padding: 0.6em 0 0.4em 0;
+  z-index: 1;
+}
+
+.text h2 {
+  margin: 0;
+}
+
+.text h2:nth-child(1) {
+  opacity: 0;
+  color: #5e5e5e;
+}
+
+.check:checked + .thumb {
+  bottom: 5em;
+  border-color: #5e5e5e; 
+}
+
+.check:checked ~ .text h2:nth-child(2) {
+  opacity: 0;
+}
+
+.check:checked ~ .text h2:nth-child(1) {
+  opacity: 1;
+}
+
+.check:checked ~ .switch-base {
+  background: linear-gradient(
+    45deg, #cfcfcf, #ededed
+  );
+  box-shadow: inset -2px -2px 0px #fff,
+    inset 2px 2px 0px #c9c9c9;
+  border-color: #b8b8b8;
+}
+
+.check:checked ~ .switch-base:before {
+  box-shadow: 11px 11px 22px #c9c9c9,
+             -11px -11px 22px #fff;
+}
+
+.check:checked ~ .background {
+  background: radial-gradient(
+    #ededed, #cfcfcf
+  );
+}
+
